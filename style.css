@@ -25,25 +25,40 @@ h2 {
 }
 
 .flex-wrap {
-    /* tells the container to drop down once it reaches max-width */
     flex-wrap: wrap;
     height: 432px;
     width: 432px;
 }
 
 .square {
-    border: 2px solid rgba(0, 0, 0, .75);
+    border: 2px solid rgba(0, 0, 0, 0.75);
     height: 140px;
     width: 140px;
+    background-color: #fff;
+    margin: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+    cursor: pointer;
+}
+
+.square:hover {
+    background-color: #ff9900;
+    transform: scale(1.1);
 }
 
 #reset-button {
     text-align: center;
-    font-size: 20px;
-    border: 1px solid black;
+    font-size: 1.2rem;
+    border: 1px solid #333;
     height: 55px;
-    width: 100px;
-    margin: 10px;
+    width: 120px;
+    margin: 20px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
-    
+#reset-button:hover {
+    background-color: #ff9900;
+    color: #333;
+}
