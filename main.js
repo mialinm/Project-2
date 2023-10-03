@@ -1,5 +1,4 @@
 /*----- constants -----*/
-
 const winningCombos = [
     [0, 1, 2],
     [3, 4, 5],
@@ -22,10 +21,10 @@ let win;
 const squares = Array.from(document.querySelectorAll('#board div'));
 
 /*----- event listeners -----*/
-
 document.getElementById('board').addEventListener('click', handleTurn);
 const messages = document.querySelector('h2');
 document.getElementById('reset-button').addEventListener('click', init);
+
 
 /*----- functions -----*/
 
@@ -58,6 +57,7 @@ function init() {
 
 function render() {
     board.forEach(function(mark, index) {
+    //this moves the value of the board item into the squares[idx]
     squares[index].textContent = mark;
     });
     messages.textContent = win === 'T' ? `That's a tie, queen!` : win ? `${win} wins the game!` : `It's ${turn}'s turn!`;
