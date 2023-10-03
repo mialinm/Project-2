@@ -49,17 +49,17 @@ h2 {
 #reset-button {
     text-align: center;
     font-size: 1.2rem;
-    border: 1px solid #333;
+    border: 1px solid #fff;
     height: 55px;
     width: 120px;
     margin: 20px;
-    background-color: #333;
-    color: #fff;
+    background-color: #fff;
+    color: #000;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
 #reset-button:hover {
-    background-color: #ff9900;
-    color: #333;
+    background-color: #ff99cc;
+    color: #000;
 }
