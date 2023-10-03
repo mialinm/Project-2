@@ -32,7 +32,7 @@ h2 {
 }
 
 .square {
-    border: 2px solid rgba(0, 0, 0, 0.75);
+    border: 2px solid rgba(255, 255, 255, 0.75);
     height: 140px;
     width: 140px;
     background-color: #fff;
@@ -42,7 +42,7 @@ h2 {
 }
 
 .square:hover {
-    background-color: #ff9900;
+    background-color: #ff99cc;
     transform: scale(1.1);
 }
 
