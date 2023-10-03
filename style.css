@@ -33,12 +33,26 @@ h2 {
     width: 140px;
 }
 
+.square:hover {
+    background-color: #ff99cc;
+    transform: scale(1.1);
+}
+
 #reset-button {
     text-align: center;
-    font-size: 20px;
-    border: 1px solid black;
+    font-size: 1.2rem;
+    border: 1px solid #fff;
     height: 55px;
-    width: 100px;
-    margin: 10px;
+    width: 120px;
+    margin: 20px;
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#reset-button:hover {
+    background-color: #ff99cc;
+    color: #000;
 }
     
