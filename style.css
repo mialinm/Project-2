@@ -58,3 +58,10 @@ h2 {
     color: #000;
 }
     
+#score {
+    color: #ff99cc;
+}
+
+#x, #o {
+    color: #000;
+}

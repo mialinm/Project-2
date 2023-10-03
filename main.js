@@ -49,16 +49,27 @@ function getWinner() {
 
 function handleTurn() {
 
+    if(win) {
+
+        return;
+
+    }
+
     let idx = squares.findIndex(function(square) {
 
         return square === event.target;
 
     });
 
-    board[idx] = turn;
-    turn = turn === 'X' ? 'O' : 'X';
-    win = getWinner();
-    render();
+    if(board[idx] === '') {
+
+        board[idx] = turn;
+        turn = turn === 'X' ? 'O' : 'X';
+        win = getWinner();
+        render();
+        
+    }
+
 
 };
 
@@ -69,9 +80,14 @@ function init() {
     '', '', '',
     '', '', ''
     ];
+
+    turn = 'X';
+    win = null;
     render();
 
 };
+
+
 
 function render() {
 
@@ -86,11 +102,14 @@ function render() {
     if (win === 'X') {
 
         xScore++;
+        document.getElementById('x').textContent = xScore;
+
 
     } else if (win === 'O') {
 
         oScore++;
-        
+        document.getElementById('o').textContent = oScore;
+
     }
 
     };
