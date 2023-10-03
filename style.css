@@ -1,6 +1,8 @@
 body {
     text-align: center;
     font-family: 'Pixelify Sans', sans-serif;
+    background-color: lightpink;
+    color: #e40072;
 }
 
 h2 {
@@ -48,18 +50,18 @@ h2 {
     width: 120px;
     margin: 20px;
     background-color: #fff;
-    color: #000;
+    color: #e40072;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
 #reset-button:hover {
-    background-color: #ff99cc;
+    background-color: #ff6cb5bd;
     color: #000;
 }
     
 #score {
-    color: #ff99cc;
+    color: #e40072;
 }
 
 #x, #o {
