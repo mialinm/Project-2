@@ -63,3 +63,12 @@ h2 {
     background-color: #ff99cc;
     color: #000;
 }
+
+#board {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    margin: 0 auto;
+}
