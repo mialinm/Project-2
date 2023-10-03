@@ -16,6 +16,9 @@ const winningCombos = [
 let board;
 let turn = 'X';
 let win;
+let xScore = 0;
+let oScore = 0;
+
 
 /*----- cached element references -----*/
 
