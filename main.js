@@ -1,4 +1,5 @@
 /*----- constants -----*/
+
 const winningCombos = [
     [0, 1, 2],
     [3, 4, 5],
@@ -57,7 +58,6 @@ function init() {
 
 function render() {
     board.forEach(function(mark, index) {
-    //this moves the value of the board item into the squares[idx]
     squares[index].textContent = mark;
     });
     messages.textContent = win === 'T' ? `That's a tie, queen!` : win ? `${win} wins the game!` : `It's ${turn}'s turn!`;
