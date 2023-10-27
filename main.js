@@ -47,7 +47,7 @@ function getWinner() {
 
 };
 
-function handleTurn() {
+function handleTurn(event) {
 
     if(win) {
 
